@@ -4,7 +4,7 @@
   // au chargement du document
   $(document).ready(() => {
     // établissement d'une connexion websocket vers le serveur websocket
-    var socket = io.connect('http://karasylla.herokuapp.com:5000');
+    var socket = io.connect('http://multijoueur.herokuapp.com:5000');
 
     // preparation info joueurs et affichage des joueurs chez les navigateurs clients
     socket.emit('preparationPlayer');
@@ -457,7 +457,7 @@
 
       // redirection de l'utilisateur vers la page de connexion lorsqu'un socket est deconnecté
       window.setTimeout(function () {
-        window.document.location.href = 'http://karasylla.herokuapp.com:5000/formulaire-connexion';
+        window.document.location.href = 'http://multijoueur.herokuapp.com:5000/formulaire-connexion';
       }, 4000);
     });
 
