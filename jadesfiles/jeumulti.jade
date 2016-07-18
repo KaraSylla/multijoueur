@@ -1,0 +1,102 @@
+doctype html
+html
+  // Début balise html
+  head
+    // Début balise header
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Jeu multijoueur Psg - start
+    link(rel='stylesheet', href='style.css', media='screen', title='style par défaut')
+  // Fin balise header
+  body
+    // Début balise body
+    #container
+      // Début div #container
+      header
+        // Début balise header
+        div
+          .headerDivLeft
+            img#logo(src='logo.png', alt='logo du psg', title='Paris saint germains')
+          .headerDivRight
+            .info-joueur
+              h1
+                span
+                  img(src='#{avatar}', name='', title='avatar', alt='avatar')
+                h1= pseudo
+              a(href='/', title='se déconnecter') déconnexion
+        nav
+          ul
+            li
+              span.menuJeu(href='jeumulti') Jouer
+      // Fin balise header
+      section
+        // Début balise section
+        .background-jeu
+          .affiche-resultat
+            h2 Résultat :
+            h3 Score
+            p#Joueur1 Joueur1
+              p#resultat1
+            p#Joueur2 Joueur2
+              p#resultat2
+            h3 Tour restant
+            p#tour-restant nbr du tour
+            h3 Victoire
+            p#victoire1 affiche les victoires
+              p#affichevictoire1
+            p#victoire2 affiche les victoires
+              p#affichevictoire2
+            h3 Durée de la partie
+            p#temps-de-jeu temps de jeu actif
+          .zone-de-jeu
+            ul.cible
+              .vs
+                p#JoueursCo Joueurs connectés :
+                p trouve le plus rapidement possible: {{question-jeu}}
+              .cache
+                div
+                  input#btn(type='button', value='défier')
+                  input#btnAccepter(type='button', value='accepter')
+              li
+                img(class="diMaria" src='di-maria_angel.jpg', alt='di maria angel')
+              li
+                img(class="sergeAurier" src='aurier_serge.jpg', alt='aurier serge')
+              li
+                img(class="edinsonCavani" src='cavani_edinson.jpg', alt='cavani edinson')
+              li
+                img(class="davidLuiz" src='david_luiz.jpg', alt='david luiz')
+              li
+                img(class="zlatanIbrahimovic" src='zlatan_ibrahimovic.jpg', alt='zlatan ibrahimovic')
+              li
+                img(class="layvinKurzawa" src='kurzawa_layvin.jpg', alt='kurzawa layvin')
+              li
+                img(class="lucasMoura" src='lucas_moura.jpg', alt='lucas moura')
+              li
+                img(class="marquinhos" src='marquinhos.jpg', alt='marquinhos')
+              li
+                img(class="blaiseMatuidi" src='matuidi_blaise.jpg', alt='matuidi blaise')
+              li
+                img(class="maxwell" src='maxwell.jpg', alt='maxwell')
+              li
+                img(class="thiagoMotta" src='motta_thiago.jpg', alt='motta thiago')
+              li
+                img(class="pastoreJavier" src='pastore_javier.jpg', alt='pastore javier')
+              li
+                img(class="adrienRabiot" src='rabiot_adrien.jpg', alt='rabiot adrien')
+              li
+                img(class="thiagoSilva" src='silva_thiago.jpg', alt='silva thiago')
+              li
+                img(class="marcoVerrati" src='verrati_marco.jpg', alt='verrati marco')
+              li
+                img(class="vanDerWiel" src='van-der-wiel_gregory.jpg', alt='van der wiel gregory')
+              li
+                img(class="kevinTrapp" src='trapp_kevin.jpg', alt='trapp kevin')
+              li
+                img(class="laurentBlanc" src='laurent_blanc.jpg', alt='laurent blanc')
+    script(src="/socket.io/socket.io.js")
+    script(src='jquery-1.11.3.js')
+    script( type="text/javascript" src="script.js")
+      // Fin balise section
+    // Fin div #container
+  // Fin balise body
+// Fin balise html

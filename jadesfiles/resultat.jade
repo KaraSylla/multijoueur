@@ -1,0 +1,35 @@
+doctype html
+html
+  // Début balise html
+  head
+    // Début balise header
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Jeu multijoueur Psg - resultat
+    link(rel='stylesheet', href='style.css', media='screen', title='style par défaut')
+  // Fin balise header
+  body
+    // Début balise body
+    #container
+      // Début div #container
+      header
+        // Début balise header
+        div
+          .headerDivLeft
+            img#logo(src='logo.png', alt='logo du psg', title='Paris saint germains')
+        nav
+          ul
+            li.resultat
+              a(href="/") Accueil
+            li.resultat
+              a(href='resultat') Resultat
+      // Fin balise header
+      section
+        // Début balise section
+        .background-jeu
+          each val in resultat
+           p= val.resultat
+      // Fin balise section
+    // Fin div #container
+  // Fin balise body
+// Fin balise html

@@ -1,0 +1,360 @@
+/*******************************************************************************
+********************************************************INITIALISATION DE BASE*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 1000px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*******************************************************************************
+****************************************************FIN INITIALISATION DE BASE*/
+
+body {
+  background: url("background_supporter-psg.jpg") no-repeat center center /100% 100%;
+}
+
+div#container {
+  margin: auto;
+  width: 66%;
+}
+
+/*******************************************************************************
+************************************************************************HEADER*/
+
+header {
+ background: #013f6f;
+ width: 100%;
+}
+
+.headerDivLeft, .headerDivRight {
+  display: inline-block;
+}
+
+.headerDivRight {
+    width: 30%;
+    height: 13%;
+    text-align: center;
+    background: #2169a2;
+    color: white;
+}
+
+header div:nth-child(2) {
+  width: 54.2%;
+}
+
+#logo {
+  width: 100%;
+}
+
+/*profil-connexion*/
+.info-joueur div{
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  background: #2169a2;
+  color: white;
+}
+.info-joueur h1{
+  display: inline-block;
+  width: 50%;
+}
+
+.info-joueur span{
+  display: inline-block;
+  padding-right: 10%;
+}
+
+.headerDivRight a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*Navigation*/
+nav li {
+  border: 5px solid #2169a2;
+  display: inline-block;
+  width: 100%;
+}
+
+nav li a {
+  color: white;
+  display: inline-block;
+  line-height: 2em;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 33.333%;
+}
+
+.menuJeu, .menuResultat {
+  width: 100%;
+  display:inline-block;
+  text-align: center;
+  color: white;
+}
+
+/*effet sur Navigation && Compatibilité effet chrome, internet, firefox*/
+li a:hover, li .menuJeu:hover {
+  background: white;
+  text-shadow: 0px 0px 7px #2169a2;
+  -moz-box-shadow: 0px 0px 7px #2169a2;
+  -webkit-box-shadow: 0px 0px 7px #2169a2;
+	color: #2169a2;
+}
+
+.menuResultat {
+  background: white;
+  color: #2169a2;;
+  font-weight: bold;
+}
+.menuResultat:hover {
+  color: red;
+}
+
+/*******************************************************************************
+********************************************************************FIN HEADER*/
+
+/*******************************************************************************
+************************************************************SECTION PRINCIPALE*/
+
+/*formulaire-inscription && formulaire-connexion*/
+.form-style {
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+
+.form-style h1 {
+    background: #2169a2;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+.form-style p {
+  color: red;
+}
+
+.form-style input[type="text"],
+.form-style input[type="password"] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+
+.form-style input[type="text"]:focus,
+.form-style input[type="password"]:focus {
+    box-shadow: 0 0 5px #2169a2;
+    -moz-box-shadow: 0 0 5px #2169a2;
+    -webkit-box-shadow: 0 0 5px #2169a2;
+    padding: 3%;
+    border: 1px solid #2169a2;
+}
+
+.form-style input[type="submit"] {
+    width: 100%;
+    padding: 3%;
+    background: #2169a2;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+
+.form-style input[type="submit"]:hover {
+  background: #2779ba;
+}
+
+select {
+  margin: auto;
+  width: 100%;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+.choix-avatars{
+  width: 60%;
+  margin: auto;
+}
+option#avatar1{
+  background: url("avatar1.png") no-repeat center center;
+  height: 80px;
+}
+option#avatar2{
+  background: url("avatar2.png") no-repeat center center;
+  height: 80px;
+}
+option#avatar3{
+  background: url("avatar3.png") no-repeat center center;
+  height: 80px;
+}
+
+/*jeumulti*/
+section .background-jeu {
+  background: url("background-jeu.jpg") no-repeat center center /100% 100%;
+  height: 100%;
+}
+
+section .background-jeu p {
+  text-align: center;
+  background: grey;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+section .vs {
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+}
+
+section .vs p {
+  background: #95c744;
+}
+
+section .vs p + p {
+  background: #2169a2;
+}
+
+section .affiche-resultat {
+  width: 18%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section .affiche-resultat h2{
+  margin: 0;
+  color: white;
+}
+
+section .affiche-resultat h3{
+  border: 1px solid white;
+  margin: 0;
+  background: white;
+  color: red;
+  font-weight: bold;
+}
+
+section .affiche-resultat p{
+  margin-left: 2%;
+  text-align: center;
+  width: 90%;
+  background: #2169a2;
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+}
+
+#resultat1, #resultat2{
+  background: #95c744;
+}
+
+section ul {
+  width: 100%;
+}
+.cible {
+  background: white;
+}
+
+section .zone-de-jeu {
+  margin-left: 1%;
+  display: inline-block;
+  width: 80%;
+}
+
+section .cache {
+  position: absolute;
+  width: 53%;
+  padding-top: 14%;
+  z-index: 1000;
+}
+
+#btn {
+  width: 100px;
+  height: 50px;
+  background: blue;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+  margin: auto;
+}
+
+#btnAccepter {
+  width: 100px;
+  height: 50px;
+  background: blue;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  display: none;
+  margin: auto;
+}
+
+section li {
+  width: 24.55%;
+  display: inline-block;
+  text-align: center;
+}
+
+section li img {
+  width: 95%;
+  opacity: 0.1;
+}
+
+/*message d'erreur*/
+#erreur-pages {
+  background: red;
+}
+
+#erreur-pages h1{
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*resultat*/
+.resultat {
+  width: 50%;
+  text-align: center;
+}
+.resultat a{
+  width: 100%;
+  text-align: center;
+}
+
+/*******************************************************************************
+*******************************************************FIN  SECTION PRINCIPALE*/

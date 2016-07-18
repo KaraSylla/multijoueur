@@ -1,0 +1,27 @@
+{
+  "name": "jeumulti",
+  "version": "1.0.0",
+  "description": "projet backend",
+  "engines": {
+    "node": "4.2.4",
+    "npm" : "2.14.12"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "author": "Kara Sylla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "mongodb": "^2.1.7",
+    "multer": "^1.1.0",
+    "nodemon": "^1.9.1",
+    "socket.io": "^1.4.5"
+  }
+}

@@ -1,0 +1,39 @@
+doctype html
+html
+  // Début balise html
+  head
+    // Début balise header
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Jeu multijoueur Psg - Formulaire de connexion
+    link(rel='stylesheet', href='style.css', media='screen', title='style par défaut')
+  // Fin balise header
+  body
+    // Début balise body
+    #container
+      // Début div #container
+      header
+        // Début balise header
+        div
+          .headerDivLeft
+            img#logo(src='logo.png', alt='logo du psg', title='Paris saint germains')
+        nav
+          ul
+            li
+              a(href='/', title='accueil') Accueil
+              a(href='/formulaire-inscription', title="s'inscrire") Inscription
+              a(href='formulaire-connexion', title='se connecter') Connexion
+      // Fin balise header
+      section
+        // Début balise section  Formulaire
+        .form-style
+          h1 Connectez vous
+          form(method="post", action="/verification-formulaire-connexion")
+            input(type='text', name='pseudonyme', placeholder='Veuillez saisir votre pseudonyme')
+            input(type='password', name='mdp', placeholder='Veuillez saisir votre mot de passe')
+            input(type='submit', value='Envoyer')
+            p= messageErreur
+      // Fin balise section
+    // Fin div #container
+  // Fin balise body
+// Fin balise html

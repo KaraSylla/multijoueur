@@ -1,0 +1,29 @@
+doctype html
+html
+  // Début balise html
+  head
+    // Début balise header
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Jeu multijoueur Psg - #{title}
+    link(rel='stylesheet', href='style.css', title='style par défaut')
+  // Fin balise header
+  body
+    // Début balise body
+    #container
+      // Début div #container
+      header
+        // Début balise header
+        div
+          .headerDivLeft
+            img#logo(src='logo.png', alt='logo du psg', title='Paris saint germains')
+      // Fin balise header
+      section#erreur-pages
+        h1= erreur403
+    script(src='jquery-1.11.3.js')
+        // Début balise section
+        // ICI INFORMATION SUR LE GAME
+      // Fin balise section
+    // Fin div #container
+  // Fin balise body
+// Fin balise html

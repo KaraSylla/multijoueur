@@ -1,0 +1,50 @@
+doctype html
+html
+  // Début balise html
+  head
+    // Début balise header
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Jeu multijoueur Psg - Formulaire d'inscription
+    link(rel='stylesheet', href='style.css', media='screen', title='style par défaut')
+  // Fin balise header
+  body
+    // Début balise body
+    #container
+      // Début div #container
+      header
+        // Début balise header
+        div
+          .headerDivLeft
+            img#logo(src='logo.png', alt='logo du psg', title='Paris saint germains')
+        nav
+          ul
+            li
+              a(href='/', title='accueil') Accueil
+              a(href='/formulaire-inscription', title="s'inscrire") Inscription
+              a(href='/formulaire-connexion', title='se connecter') Connexion
+      // Fin balise header
+      section
+        // Début balise section  Formulaire
+        .form-style
+          h1 Inscrivez vous
+          form(method="post", action="/verification-formulaire-inscription")
+            div.choix-avatars
+              span
+                img(src='avatar1.png', alt='avatar 1', title='avatar 1')
+              span
+                img(src='avatar2.png', alt='avatar 2', title='avatar 2')
+              span
+                img(src='avatar3.png', alt='avatar 3', title='avatar 3')
+            input(type='text', name='pseudonyme', placeholder='veuillez saisir un pseudonyme')
+            input(type='password', name='nvxMdp', placeholder='Veuillez saisir un nouveau mot de passe')
+            select(name="avatar")
+              option#avatar1(value="avatar1.png") avatar 1
+              option#avatar2(value="avatar2.png") avatar 2
+              option#avatar3(value="avatar3.png") avatar 3
+            input(type='submit', value='Envoyer')
+            p= messageErreur
+      // Fin balise section
+    // Fin div #container
+  // Fin balise body
+// Fin balise html
