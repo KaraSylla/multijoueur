@@ -13,7 +13,6 @@ var MongoClient = require('mongodb').MongoClient;
 // url de connexion à la base mongodb
 var URL ='mongodb://KaraSylla:Alchi86..@ds023495.mlab.com:23495/multijoueur';
 // var URL ='mongodb://localhost:27017/multijoueur';
-
 // déclaration variable pour la bdd
 var maDb;
 
